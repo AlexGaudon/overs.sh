@@ -53,7 +53,7 @@ func StartDownloadServer() error {
 	if os.Getenv("DEV") == "true" {
 		e.Start(":3000")
 	} else {
-		err := e.StartTLS(":443", "/etc/letsencrypt/live/www.overs.sh/fullchain.pem", "/etc/letsencrypt/live/www.overs.sh/privkey.pem")
+		err := e.StartTLS(":443", "./fullchain.pem", "./privkey.pem")
 		if err != nil {
 			return err
 		}

@@ -26,6 +26,8 @@ You will also need a SSL certificate, you can provide your own or generate one u
 
 Store both the private (privkey.pem) and public (fullchain.pem) files in this directory.
 
+Lastly, set an environment variable called `URL` with the domain that you'll be hosting the application on. (Example: https://overs.sh)
+
 After you have all of the configuration done, simply run `make prod` to run a production instance of the application, or `make dev` for a development instance.
 
 # FAQs

@@ -58,7 +58,7 @@ func init() {
 	if os.Getenv("DEV") == "true" {
 		url = "http://localhost:3000/d/"
 	} else {
-		url = "https://overs.sh/d/"
+		url = fmt.Sprintf("%s/d/", os.Getenv(("URL")))
 	}
 }
 
