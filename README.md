@@ -18,7 +18,7 @@ It will ask you where to save the key, enter `./key`
 
 You now have a .key and .key.pub file.
 
-The application will automatically read the .key file if it exists, and use a random key if none is created.
+The application will automatically read the .key file if it exists, and use a random key if one isn't created.
 
 Note: Not generating a key will lead to a warning of a possible man in the middle attack, and you will have to remove the entry from your `known_hosts` file every time you restart the server.
 
